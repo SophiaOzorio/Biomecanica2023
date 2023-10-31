@@ -69,11 +69,11 @@ fig = plt.figure(figsize=(7,7))
 ax = fig.add_subplot(projection = '3d')  #gráfico 3d vazio
 
 #Ponto da câmera 1
-ax.scatter(xc1, yc1, zc1, c='red', label='Câmera 1') 
+ax.scatter(xc1, yc1, zc1, c='yellow', label='Câmera 1') 
 ax.scatter(xp1, yp1, zp1, c='orange', label='Projeção da Câmera 1') 
 
 #Ponto da câmera 2
-ax.scatter(xc2, yc2, zc2, c='blue', label='Câmera 2') 
+ax.scatter(xc2, yc2, zc2, c='green', label='Câmera 2') 
 ax.scatter(xp2, yp2, zp2, c='skyblue', label='Projeção da Câmera 2') 
 
 x1 = np.linspace(xc1, xp1)
