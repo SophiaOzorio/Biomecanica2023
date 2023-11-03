@@ -11,12 +11,12 @@ import sys
 #from rich import print
 
 # Lendo os arquivos
-cp2d_c1 = pd.read_csv('../Biomecânica2023/c1cal2rec3d.dat', delimiter=' ', header=None)
-cp2d_c2 = pd.read_csv('../Biomecânica2023/c2cal2rec3d.dat', delimiter=' ', header=None)
+cp2d_c1 = pd.read_csv('../Trabalho 2/c1cal2rec3d.dat', delimiter=' ', header=None)
+cp2d_c2 = pd.read_csv('../Trabalho 2/c2cal2rec3d.dat', delimiter=' ', header=None)
 cp2dc1 = np.asarray(cp2d_c1)
 cp2dc2 = np.asarray(cp2d_c2)
 
-cp3d = pd.read_csv('../Biomecânica2023/ref3d_v2.ref', delimiter=' ',header=None)
+cp3d = pd.read_csv('../Trabalho 2/ref3d_v2.ref', delimiter=' ',header=None)
 cp3d = np.asarray(cp3d)
 cp3d = np.asarray(cp3d)
 cp2d = np.asarray(cp2dc1)
@@ -256,9 +256,9 @@ print('\n')
 # with open(str(sys.argv[6])+'_res.txt', 'w') as output:
 #output.write(str(resultado))
    
-    np.savetxt(str(sys.argv[6])+'.3d', cc3d, fmt='%.10f')
-    np.savetxt(str(sys.argv[6])+'_filt.3d', cc3df, fmt='%.10f')
+np.savetxt(str(sys.argv[6])+'.3d', cc3d, fmt='%.10f')
+np.savetxt(str(sys.argv[6])+'_filt.3d', cc3df, fmt='%.10f')
 
-    # np.savetxt(str(sys.argv[6])+'.txt', resultado, fmt='%.10f')
+# np.savetxt(str(sys.argv[6])+'.txt', resultado, fmt='%.10f')
 
-    np.savetxt(str(sys.argv[6])+'.3d', cc3d, fmt='%.10f')
+np.savetxt(str(sys.argv[6])+'.3d', cc3d, fmt='%.10f')
