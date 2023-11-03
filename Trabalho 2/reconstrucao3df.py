@@ -56,7 +56,7 @@ DLT_c2 = (M1).dot(MN).T
 
 print(DLT_c2)
 
-# Reconstruction 3D
+# Reconstrução 3D
 def r3d(DLTs, cc2ds):
     DLTs = np.asarray(DLTs)
     cc2ds = np.asarray(cc2ds)
