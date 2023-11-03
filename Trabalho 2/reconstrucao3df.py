@@ -1,3 +1,4 @@
+# SOPHIA PEREIRA OZÓRIO - 13903467
 # carregando as bibliotecas necessarias
 import numpy as np
 from numpy.linalg import inv
